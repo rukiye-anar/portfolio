@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <title>Contact</title>
+</head>
+
+<body>
+
+  <div id="navbar-placeholder"></div>
+  <div id="bubble-container"></div>
+  <main class="contact-container">
+
+
+    <div class="div-container">
+
+      <h1>İletişim</h1>
+   <form action="https://formspree.io/f/mvgbwevq" method="POST" class="contact-form" novalidate>
+        <label for="name">Adınız</label>
+        <input type="text" id="name" name="name" placeholder="Adınızı girin" required />
+
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required />
+
+        <label for="message">Mesajınız</label>
+        <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+
+        <button type="submit" id="submit">Gönder</button>
+      </form>
+
+    </div>
+    <div id="confirm-modal" class="modal">
+      <div class="modal-content">
+        <p>Mesajınız başarılı bir şekilde iletildi </p>
+        <button id="button">Tamam</button>
+
+
+      </div>
+    </div>
+    </div>
+    <div class="contact-cards">
+      <a href="https://linkedin.com/in/rukiyeanar" target="_blank" class="contact-card">
+        <img src="img/linkedin-icon.png" alt="LinkedIn">
+        <span>linkedin.com/in/rukiye-anar</span>
+      </a>
+
+      <a href="https://github.com/rukiye-anar" target="_blank" class="contact-card">
+        <img src="img/github-icon.png" alt="GitHub">
+        <span>github.com/rukiye-anar</span>
+      </a>
+
+      <a href="mailto:erenrukk@gmail.com" class="contact-card">
+        <img src="img/email-icon.png" alt="E-posta">
+        <span>erenrukk@gmail.com</span>
+      </a>
+    </div>
+
+  </main>
+
+
+  <div id="footer-placeholder"></div>
+  <script src="js/theme-loader.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/main-logic.js"></script>
+
+
+  <script src="js/contact.js"></script>
+
+</body>
+
+</html>

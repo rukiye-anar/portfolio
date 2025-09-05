@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  place-content: center;
+  background-color: #e3f2fd;
+}
+.container {
+  border: 1px solid #1976d2;
+  background-color: #1976d2;
+  width: 300px;
+  height: 250px;
+  border-radius: 10%;
+}
+#name {
+  border: 1px solid #1976d2;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  color: #0d47a1;
+  background-color: #e3f2fd;
+}
+
+#surname {
+  border: 1px solid #1976d2;
+  background-color: #e3f2fd;
+  border-radius: 5px;
+  color: #0d47a1;
+  margin-left: 2px;
+  width: 150px;
+  height: 20px;
+}
+#email {
+  border: 1px solid #1976d2;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+  margin-left: 2px;
+}
+.p {
+  color: #e3f2fd;
+  margin-left: 40px;
+}
+#submit {
+  width: 60px;
+  height: 40px;
+  margin-left: 120px;
+  color: #e3f2fd;
+  background-color: #42a5f5;
+  border: 1px solid #42a5f5;
+  border-radius: 10%;
+}
+input:focus {
+  outline: none;
+}

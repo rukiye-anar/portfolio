@@ -1,0 +1,62 @@
+/* Sayfa genel görünüm */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ana kapsayıcı */
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Başlık */
+.header {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Girdi alanı */
+#find-movie {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Buton */
+#button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#button:hover {
+  background-color: #45a049;
+}
+
+/* Sonuç kutusu */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+}

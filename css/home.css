@@ -1,0 +1,159 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, #C5D7ED, #6E98BA,#334F70);
+  color: white;
+  padding: 60px 80px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #FCB5BB;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #FFDADB;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+ .projects {
+  padding: 60px 80px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  margin: 10px 0 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #666;
+} 
+
+/* Responsive tasarım */
+@media (max-width: 1024px) {
+  /* Tablet boyutlarında */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
+
+  .project-list {
+    gap: 15px;
+  }
+
+  .project-card {
+    width: calc(50% - 15px); /* Yan yana 2 kart */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  /* Mobil boyutlarda */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-image img {
+    display: none; /* Mobilde resim kalksın */
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Tek sütun */
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .project-card img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .project-card h3 {
+    font-size: 16px;
+  }
+}
+
+

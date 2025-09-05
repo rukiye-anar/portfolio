@@ -1,0 +1,44 @@
+{
+  "Istanbul": { 
+    "image":"img/clouds.png",
+    "temperature": "26°C",
+    "description": "Parçalı Bulutlu"
+   
+  },
+  "Ankara": {
+     "image":"img/sun.png",
+    "temperature": "22°C",
+    "description": "Güneşli"
+    
+  },
+  "Izmir": {
+    "image":"img/sun.png",
+    "temperature": "30°C",
+    "description": "Sıcak ve Güneşli"
+  },
+  "Bursa": {
+    "temperature": "24°C",
+    "description": "Az Bulutlu",
+    "image":"img/clouds.png"
+  },
+  "Antalya": {
+    "temperature": "33°C",
+    "description": "Çok Sıcak",
+    "image":"img/sun.png"
+  },
+  "Trabzon": {
+    "temperature": "20°C",
+    "description": "Yağmurlu",
+    "image":"img/rain.png"
+  },
+  "Gaziantep": {
+    "temperature": "35°C",
+    "description": "Sıcak ve Açık",
+    "image":"img/sun.png"
+  },
+  "Eskişehir": {
+    "temperature": "21°C",
+    "description": "Rüzgarlı ve Serin",
+    "image":"img/clouds.png"
+  }
+}

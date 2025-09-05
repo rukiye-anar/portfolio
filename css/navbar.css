@@ -1,0 +1,170 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+/* --- Navbar Ana Konteyneri --- */
+.navbar {
+  background-image: linear-gradient(to right, #c5d7ed, #6e98ba, #334f70);
+  color: #f0f0f0;
+  padding: 1rem 0;
+  border-bottom: 1px solid #334f70;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- İçerik Hizalama Konteyneri --- */
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* Öğeleri iki uca yaslar */
+  align-items: center; /* Dikeyde ortalar */
+  max-width: 1200px; /* Maksimum genişlik */
+  margin: 0 auto; /* Sayfaya ortalar */
+  padding: 0 2rem; /* Kenar boşlukları */
+}
+
+/* --- Marka / Logo (İsim) --- */
+.nav-brand {
+  font-size: 1.4rem; /* Yazı boyutu */
+  font-weight: 600; /* Yazı kalınlığı */
+  color: #ffffff; /* Beyaz renk */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  transition: color 0.3s ease;
+}
+
+.nav-brand:hover {
+  color: #a9a9a9; /* Üzerine gelince hafif soluklaşma */
+}
+
+/* --- Navigasyon Bağlantıları --- */
+.nav-links {
+  position: absolute;
+  left: 40%;
+  display: flex;
+  gap: 2.5rem; /* Bağlantılar arası boşluk */
+}
+
+.nav-links a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Bağlantıların altına hover efekti için çizgi ekleme */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #fcb5bb;
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Çizginin genişlemesi */
+}
+#theme-select {
+  background-color: #6e98ba;
+  border-color: #6e98ba;
+  color: #eaf1f7;
+  padding: 0.5rem 1rem;
+  border-radius: 20px; /* Yuvarlak kenarlar */
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+/* Hamburger (Mobil) */
+#hamburger-link {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  #hamburger-link {
+    display: block;
+    align-items: end;
+  }
+  #theme-select {
+    top: 2%;
+    left: 50%;
+  }
+}
+#hamburger-link {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#hamburger-link {
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Yan Menü */
+#side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-image: linear-gradient(to right, #c5d7ed, #6e98ba, #334f70);
+  color: white;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+}
+
+#side-menu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#side-menu a:hover {
+  background: #334f70;
+}
+
+/* Menü açıkken */
+#side-menu.active {
+  right: 0;
+}
+
+/* Kapatma butonu */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}

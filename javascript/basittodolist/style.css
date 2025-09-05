@@ -1,0 +1,153 @@
+/* Genel sayfa stili */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Kart yer tutucu (ileride eklenecek şeyler için) */
+#card-placeholder {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+/* Todo bölümü */
+#todo-section {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Başlık */
+.list {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Girdi kutusu */
+#todo-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Ekle butonu */
+#add-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: #45a049;
+}
+
+/* Tümünü Sil butonu */
+#delete-all {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#delete-all:hover {
+  background-color: #d32f2f;
+}
+
+/* Liste stili */
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Tekli görev elemanları */
+#todo-list li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 12px 10px;
+  border-radius: 6px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Sil butonları (li içindekiler) */
+#todo-list li button {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#todo-list li button:hover {
+  background-color: #c62828;
+}
+.modal {
+  display: none; /* Başta gizli */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin: 10px;
+}
+#confirm-yes {
+  background-color: #45a049;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#confirm-no {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}

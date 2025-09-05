@@ -1,0 +1,170 @@
+/* Genel yapı */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f4f7f8, #ffffff);
+  color: #333;
+}
+
+
+/* Ana kapsayıcı */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* Form kutusu */
+.div-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 60px;
+}
+
+/* Başlık */
+.contact-container h1 {
+  margin-bottom: 25px;
+  color: #334F70;
+  text-align: center;
+}
+ 
+/* Form öğeleri */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #334F70;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #334F70;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 12px 0;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6E98BA;
+}
+
+/* İletişim kartları bölümü */
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+/* Tek bir iletişim kartı */
+.contact-card {
+  background: linear-gradient(to bottom right, #C5D7ED, #EAF1F7);
+  border: 1.5px solid #6E98BA;
+  border-radius: 12px;
+  padding: 18px 24px;
+  width: 300px;
+  text-align: left;
+  text-decoration: none;
+  color: #334F70;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  backdrop-filter: blur(4px);
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: invert(26%) sepia(34%) saturate(848%) hue-rotate(172deg) brightness(91%) contrast(82%);
+  
+}
+
+/* Mobil ekranlar */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 25px 20px;
+  }
+
+  .div-container {
+    padding: 20px;
+  }
+  .contact-form{
+    width: 90%;
+  }
+
+  .contact-cards {
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+}
+.modal {
+  display: none; /* Başta gizli */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 8px;
+}
+#button {
+  background-color: #334F70;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}

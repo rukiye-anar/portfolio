@@ -1,0 +1,48 @@
+/* Genel sayfa stili */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Ana kapsayıcı */
+.city-weather {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Label ve select */
+#city-name-select {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+#city-select {
+  padding: 6px 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Hava durumu kutusu */
+#weather-widget h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+#weather-widget p {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #555;
+}

@@ -1,0 +1,143 @@
+/* Genel Stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9; 
+    color: #333;
+}
+/* Başlık Bölümü */
+.header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: #2c3e50;
+}
+
+.header p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Projeler Alanı */
+.projects-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.project-card-btn {
+  text-decoration: none;
+  background-color: #FCB5BB;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card-btn:hover {
+  background-color: #FFDADB;
+} 
+.search-container {
+  display: flex;
+  justify-content: center; 
+  padding: 2rem 1rem;    
+  max-width: 600px;       
+  margin: 0 auto; 
+}
+/* --- Arama Kutusunun Kendisi --- */
+#project-search-input {
+  width: 100%; 
+  padding: 12px 20px; 
+  font-size: 1rem; 
+  font-family: inherit; 
+  border: 1px solid #ddd;
+  border-radius: 30px; 
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#project-search-input::placeholder {
+  color: #aaa; 
+  opacity: 1;
+}
+#project-search-input:focus {
+  outline: none; 
+  border-color: #6e98ba;
+  box-shadow: 0 4px 12px rgba(110, 152, 186, 0.2); 
+}
+#project-search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 16px;
+  width: 16px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23999'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+  background-size: 16px 16px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+#project-search-input::-webkit-search-cancel-button:hover {
+    opacity: 1;
+}
+#project-stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.stats-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.tag-stat {
+    background-color: #eef2f7;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.tag-stat strong {
+    color: #334f70;
+}

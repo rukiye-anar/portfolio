@@ -1,0 +1,76 @@
+/* Genel ayarlar */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Footer */
+.footer {
+ background-image: linear-gradient(to right, #C5D7ED, #6E98BA,#334F70);
+  color: #f0f0f0;
+  padding: 60px 20px 30px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+}
+.footer-col h3, .footer-col h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer-col p, .footer-col li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-col li a:hover {
+  color: #FFDADB;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  filter: invert(26%) sepia(34%) saturate(848%) hue-rotate(172deg) brightness(91%) contrast(82%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+ 
+}
+
+.social-icons img:hover {
+ filter: invert(61%) sepia(10%) saturate(1388%) hue-rotate(165deg) brightness(94%) contrast(87%);
+  transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #334F70;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #334F70;
+}
+
