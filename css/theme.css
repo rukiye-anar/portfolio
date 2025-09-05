@@ -113,12 +113,12 @@
   color: #1a1c20;
 }
 [data-theme="dark"] .contact-card img {
-  filter: invert(10%) sepia(3%) saturate(1991%) hue-rotate(182deg) brightness(93%)
-    contrast(95%);
+  filter: invert(10%) sepia(3%) saturate(1991%) hue-rotate(182deg)
+    brightness(93%) contrast(95%);
 }
 [data-theme="dark"] .social-icons img {
-  filter: invert(95%) sepia(9%) saturate(149%) hue-rotate(168deg) brightness(99%)
-    contrast(96%);
+  filter: invert(95%) sepia(9%) saturate(149%) hue-rotate(168deg)
+    brightness(99%) contrast(96%);
 }
 [data-theme="dark"] .social-icons img:hover {
   filter: invert(96%) sepia(0%) saturate(0%) hue-rotate(158deg) brightness(92%)
@@ -150,8 +150,8 @@
   background: #333;
 }
 [data-theme="dark"] #project-search-input {
-   background-color: #7b7a7a;
-   border: solid 1px #7b7a7a;
+  background-color: #7b7a7a;
+  border: solid 1px #7b7a7a;
 }
 [data-theme="dark"] #project-search-input::placeholder {
   color: white;
@@ -160,14 +160,14 @@
   color: white;
 }
 [data-theme="dark"] .tag-stat {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 [data-theme="dark"] .tag-stat strong {
-    color: white;
+  color: white;
 }
-[data-theme="dark"] #project-stats-container{
-   color: white;
+[data-theme="dark"] #project-stats-container {
+  color: white;
 }
 
 /* ==========================================================================
@@ -219,7 +219,7 @@
   background: #deb68a;
 }
 [data-theme="soft"] .footer-col li a:hover {
- color: #deb68a;
+  color: #deb68a;
 }
 [data-theme="soft"] .profile-photo {
   border: 4px solid #d4a373;
@@ -317,8 +317,8 @@
   border: 1.5px solid #ccd5ae;
 }
 [data-theme="soft"] #project-search-input {
-   background-color: #fefae0;
-   border: solid 1px #ccd5ae;
+  background-color: #fefae0;
+  border: solid 1px #ccd5ae;
 }
 [data-theme="soft"] #project-search-input::placeholder {
   color: #d4a373;
@@ -327,14 +327,14 @@
   color: #d4a373;
 }
 [data-theme="soft"] .tag-stat {
-    background-color: #d4a373;
-    color: #fefae0;
+  background-color: #d4a373;
+  color: #fefae0;
 }
 [data-theme="soft"] .tag-stat strong {
-    color: #fefae0;
+  color: #fefae0;
 }
-[data-theme="soft"] #project-stats-container{
-   color: #d4a373;
+[data-theme="soft"] #project-stats-container {
+  color: #d4a373;
 }
 
 /* ==========================================================================
@@ -515,8 +515,8 @@
   color: #b2f0f7;
 }
 [data-theme="sungerbob"] #project-search-input {
-   background-color: #b2f0f7;
-   border: solid 1px #0457a0;
+  background-color: #b2f0f7;
+  border: solid 1px #0457a0;
 }
 [data-theme="sungerbob"] #project-search-input::placeholder {
   color: #0457a0;
@@ -525,16 +525,15 @@
   color: white;
 }
 [data-theme="sungerbob"] .tag-stat {
-    background-color: #3bc2ad;
-    color: #0457a0; 
-     border:1px solid #0457a0 ;
+  background-color: #3bc2ad;
+  color: #0457a0;
+  border: 1px solid #0457a0;
 }
 [data-theme="sungerbob"] .tag-stat strong {
-    color: #0457a0;
+  color: #0457a0;
 }
-[data-theme="sungerbob"] #project-stats-container{
-   color: #0457a0;
- 
+[data-theme="sungerbob"] #project-stats-container {
+  color: #0457a0;
 }
 /* ==========================================================================
    Süngerbob Baloncuk Efekti (Birleşik Animasyon)
@@ -553,22 +552,17 @@
 .bubble {
   position: absolute;
   bottom: -200px;
-  
-  /* Karikatür Stili (Aynı kalıyor) */
+
   background-color: rgba(144, 202, 249, 0.4);
   border: 3px solid white;
   border-radius: 50%;
-
-  /* DÜZELTME: Artık sadece TEK bir animasyon adı kullanıyoruz */
-  animation-name: riseAndWobble; 
+  animation-name: riseAndWobble;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  /* Animasyon süresi ve gecikmesi JS tarafından atanacak */
 }
 
-/* Karikatür Parlaklığı (Aynı kalıyor) */
 .bubble::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 15%;
   left: 15%;
@@ -579,24 +573,19 @@
   transform: rotate(-30deg);
 }
 
-
 @keyframes riseAndWobble {
   0% {
-    /* Başlangıç: Ekranın altında ve ortada */
     transform: translateY(0) translateX(0);
     opacity: 1;
   }
   25% {
-    /* Yolun çeyreğinde: Hafif sola salla */
     transform: translateY(-25vh) translateX(-15px);
   }
   50% {
-    /* Yolun yarısında: Hafif sağa salla */
     transform: translateY(-50vh) translateX(15px);
   }
-  
+
   100% {
-    /* Bitiş: Ekranın tepesinden çıkarken ortada ve kaybolmuş */
     transform: translateY(-120vh) translateX(0);
     opacity: 0;
   }
