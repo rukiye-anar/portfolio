@@ -579,7 +579,7 @@
   transform: rotate(-30deg);
 }
 
-/* DÜZELTME: floatUp ve wobble animasyonlarını birleştirdik */
+
 @keyframes riseAndWobble {
   0% {
     /* Başlangıç: Ekranın altında ve ortada */
