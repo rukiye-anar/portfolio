@@ -343,20 +343,20 @@
 
 [data-theme="sungerbob"] body {
   background-color: #00c2cb;
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
 }
 [data-theme="sungerbob"] .navbar {
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
   border-bottom: 1px solid #00c2cb;
 }
 [data-theme="sungerbob"] .footer {
-  background-image: url("/img/footer.jpg");
+  background-image: url("../img/footer.jpg");
   background-size: cover;
   background-position: center;
   height: 800px;
 }
 [data-theme="sungerbob"] .hero {
-  background-image: url("/img/sungerbob.jpg");
+  background-image: url("../img/sungerbob.jpg");
   background-size: cover;
   background-position: center;
   height: 800px;
@@ -423,7 +423,7 @@
   color: #0457a0;
 }
 [data-theme="sungerbob"] #side-menu {
-  background-image: url(/img/bg.png);
+  background-image: url(../img/bg.png);
   color: #fefb00;
 }
 [data-theme="sungerbob"] #side-menu a {
