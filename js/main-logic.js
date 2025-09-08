@@ -62,21 +62,18 @@ const homeProjectsData = [
       imageSrc: "img/weather.jpg",
       title: "🌤 Hava Durumu Uygulaması",
       description: "Şehir seçerek anlık hava durumunu gösterir.",
-      link: "project.html",
     },
     {
       id: "movie-app-home",
       imageSrc: "img/movie.jpg",
       title: "🎬 Film Arama Uygulaması",
       description: "OMDb API ile film ara, detaylarını görüntüle.",
-      link: "project.html",
     },
     {
       id: "todo-app-home",
       imageSrc: "img/todo.jpg",
       title: "📝 Yapılacaklar Listesi",
       description: "Kodla geliş, sadece zamanı yakala.",
-      link: "project.html",
     },
 ];
 

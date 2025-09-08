@@ -11,13 +11,11 @@ export function ButtonComponent({ link, text, styleClass = '' }) {
 }
 export function HomeProjectCardComponent({ imageSrc, altText, title, description, link }) {
   return `
-    <a href="${link}" class="project-card-link">
-      <div class="project-card">
+     <div class="project-card">
         <img src="${imageSrc}" alt="${altText}" />
         <h3>${title}</h3>
         <p>${description}</p>
       </div>
-    </a>
   `;
 }
 export function ProjectPageCardComponent({ title, description, projectLink }) {
@@ -25,17 +23,19 @@ export function ProjectPageCardComponent({ title, description, projectLink }) {
     <div class="project-card">
         <h3>${title}</h3>
         <p>${description}</p>
-        ${ButtonComponent({ 
-            link: projectLink, 
-            text: 'Projeyi Gör', 
-            styleClass: 'project-card-btn'
+        
+        ${ButtonComponent({
+          link: projectLink,
+          text: "Projeyi Gör",
+          styleClass: "project-card-btn",
         })}
+
     </div>
   `;
 }
 export function NavbarComponent() {
- return `
-   <nav class="navbar">
+  return ` 
+  <nav class="navbar">
           
     <div class="nav-container">
       
@@ -55,9 +55,7 @@ export function NavbarComponent() {
     <a href="contact.html">İletişim</a>
     
   </div>
-</nav>
-
-  `;
+</nav>`;
 }
 export function FooterComponent() {
     return `
@@ -100,8 +98,10 @@ export function FooterComponent() {
 
   `;
 }
+
+// Bu fonksiyonu dışarıya AÇIYORUZ
 export function ThemeSwitcherComponent() {
-  return `
+    return `
     <div class="theme-switcher">
         <select id="theme-select">
             <option value="light">Açık</option>
@@ -112,3 +112,4 @@ export function ThemeSwitcherComponent() {
     </div>
   `;
 }
+
