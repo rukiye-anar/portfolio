@@ -7,3 +7,4 @@
     console.log("theme-loader.js çalışmıyor")
   }
 })();
+//try catch yapısı maliyetli bir işlem olduğu için mümkün olan daha az maliyetli bir kullanım varsa öğren try catch yapısını zorunlu olmadukça kullanma 
