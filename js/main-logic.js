@@ -1,3 +1,13 @@
+import { 
+    NavbarComponent, 
+    FooterComponent, 
+    ThemeSwitcherComponent,
+    HomeProjectCardComponent,
+    ProjectPageCardComponent,
+    ButtonComponent 
+} from './components.js'; // './' aynı klasörde demektir.
+
+
 "use strict";
 
 // --- 1. VERİ (DATA) ---

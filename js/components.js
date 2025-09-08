@@ -6,48 +6,35 @@
  * @param {string} [props.styleClass=''] - Butona eklenecek ekstra CSS class'ı (isteğe bağlı).
  * @returns {string} - Oluşturulan A etiketi HTML'i.
  */
-function ButtonComponent({ link, text, styleClass = "" }) {
-  return `
-    <a href="${link}" class="btn ${styleClass}">
-      ${text}
-    </a>
-  `;
+export function ButtonComponent({ link, text, styleClass = '' }) {
+  return `<a href="${link}" target="_blank" class="btn ${styleClass}">${text}</a>`;
 }
-function HomeProjectCardComponent({
-  imageSrc,
-  altText,
-  title,
-  description,
-  link,
-}) {
+export function HomeProjectCardComponent({ imageSrc, altText, title, description, link }) {
   return `
-
+    <a href="${link}" class="project-card-link">
       <div class="project-card">
         <img src="${imageSrc}" alt="${altText}" />
         <h3>${title}</h3>
         <p>${description}</p>
       </div>
-  
+    </a>
   `;
 }
-
-function ProjectPageCardComponent({ title, description, projectLink }) {
+export function ProjectPageCardComponent({ title, description, projectLink }) {
   return `
     <div class="project-card">
         <h3>${title}</h3>
         <p>${description}</p>
-        
-        ${ButtonComponent({
-          link: projectLink,
-          text: "Projeyi Gör",
-          styleClass: "project-card-btn",
+        ${ButtonComponent({ 
+            link: projectLink, 
+            text: 'Projeyi Gör', 
+            styleClass: 'project-card-btn'
         })}
-
     </div>
   `;
 }
-function NavbarComponent() {
-  return `
+export function NavbarComponent() {
+ return `
    <nav class="navbar">
           
     <div class="nav-container">
@@ -72,8 +59,8 @@ function NavbarComponent() {
 
   `;
 }
-function FooterComponent() {
-  return `
+export function FooterComponent() {
+    return `
 <footer class="footer">
     <div class="footer-inner">
 
@@ -113,7 +100,7 @@ function FooterComponent() {
 
   `;
 }
-function ThemeSwitcherComponent() {
+export function ThemeSwitcherComponent() {
   return `
     <div class="theme-switcher">
         <select id="theme-select">
